@@ -84,10 +84,7 @@ document.getElementById('filterStatus').addEventListener('change', renderTasks);
 
 function formatDate(dateStr) {
     if (!dateStr) return '';
-    const d = new Date(dateStr);
-    const day = String(d.getDate()).padStart(2, '0');
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const year = d.getFullYear();
+    const [year, month, day] = dateStr.split('-');
     return `${day}-${month}-${year}`;
 }
 
