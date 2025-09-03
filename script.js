@@ -82,6 +82,15 @@ document.getElementById('filterStatus').addEventListener('change', renderTasks);
     updateStats(tasks);
 }
 
+function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year = d.getFullYear();
+    return `${day}-${month}-${year}`;
+}
+
     function createTaskItem(task, isCompleted = false) {
         const div = document.createElement('div');
         div.className = `task-item priority-${task.priority} ${isCompleted ? '' : ''}`;
