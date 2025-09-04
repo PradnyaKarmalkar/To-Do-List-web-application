@@ -6,7 +6,7 @@ A modern, feature-rich To-Do List web application to supercharge your productivi
 Built with vanilla HTML, CSS, and JavaScript.  
 Easily manage, organize, and track your tasks with a beautiful interface.
 
-##Setup Instructions
+## Setup Instructions
 
 Download all three files to the same directory:
 
@@ -19,7 +19,7 @@ Open index.html in any modern web browser
 
 No installation, dependencies, or server required.
 
-## Features
+## Highlights of my app
 
 - **Add, Edit, Delete Tasks**  
 - **Priority Levels** (High, Medium, Low)
